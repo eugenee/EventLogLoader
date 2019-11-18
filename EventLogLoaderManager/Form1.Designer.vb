@@ -65,9 +65,11 @@ Partial Class Form1
         Me.ListView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ListView.FullRowSelect = True
         Me.ListView.GridLines = True
-        Me.ListView.Location = New System.Drawing.Point(3, 20)
+        Me.ListView.HideSelection = False
+        Me.ListView.Location = New System.Drawing.Point(4, 25)
+        Me.ListView.Margin = New System.Windows.Forms.Padding(4)
         Me.ListView.Name = "ListView"
-        Me.ListView.Size = New System.Drawing.Size(746, 273)
+        Me.ListView.Size = New System.Drawing.Size(995, 335)
         Me.ListView.TabIndex = 1
         Me.ListView.UseCompatibleStateImageBehavior = False
         Me.ListView.View = System.Windows.Forms.View.Details
@@ -116,9 +118,10 @@ Partial Class Form1
         '
         Me.ConnectionStringBox.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.ConnectionStringBox.Location = New System.Drawing.Point(123, 24)
+        Me.ConnectionStringBox.Location = New System.Drawing.Point(164, 30)
+        Me.ConnectionStringBox.Margin = New System.Windows.Forms.Padding(4)
         Me.ConnectionStringBox.Name = "ConnectionStringBox"
-        Me.ConnectionStringBox.Size = New System.Drawing.Size(527, 20)
+        Me.ConnectionStringBox.Size = New System.Drawing.Size(701, 22)
         Me.ConnectionStringBox.TabIndex = 2
         '
         'Label1
@@ -126,36 +129,40 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Maroon
-        Me.Label1.Location = New System.Drawing.Point(4, 4)
+        Me.Label1.Location = New System.Drawing.Point(5, 5)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(402, 17)
+        Me.Label1.Size = New System.Drawing.Size(479, 21)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Строка соединения с базой данных для записи событий ЖР"
         '
         'Button4
         '
         Me.Button4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button4.Location = New System.Drawing.Point(656, 24)
+        Me.Button4.Location = New System.Drawing.Point(875, 30)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.Size = New System.Drawing.Size(100, 28)
         Me.Button4.TabIndex = 4
         Me.Button4.Text = "Проверить"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'ESIndexNameTextBox
         '
-        Me.ESIndexNameTextBox.Location = New System.Drawing.Point(107, 21)
+        Me.ESIndexNameTextBox.Location = New System.Drawing.Point(143, 26)
+        Me.ESIndexNameTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.ESIndexNameTextBox.Name = "ESIndexNameTextBox"
-        Me.ESIndexNameTextBox.Size = New System.Drawing.Size(169, 24)
+        Me.ESIndexNameTextBox.Size = New System.Drawing.Size(224, 28)
         Me.ESIndexNameTextBox.TabIndex = 9
         '
         'DBType
         '
         Me.DBType.FormattingEnabled = True
         Me.DBType.Items.AddRange(New Object() {"MS SQL Server", "MySQL", "ElasticSearch"})
-        Me.DBType.Location = New System.Drawing.Point(5, 24)
+        Me.DBType.Location = New System.Drawing.Point(7, 30)
+        Me.DBType.Margin = New System.Windows.Forms.Padding(4)
         Me.DBType.Name = "DBType"
-        Me.DBType.Size = New System.Drawing.Size(112, 21)
+        Me.DBType.Size = New System.Drawing.Size(148, 24)
         Me.DBType.TabIndex = 8
         '
         'Button6
@@ -163,9 +170,10 @@ Partial Class Form1
         Me.Button6.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Button6.Image = Global.EventLogLoaderManager.My.Resources.Resources.info
         Me.Button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button6.Location = New System.Drawing.Point(639, 456)
+        Me.Button6.Location = New System.Drawing.Point(852, 561)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(123, 48)
+        Me.Button6.Size = New System.Drawing.Size(164, 59)
         Me.Button6.TabIndex = 7
         Me.Button6.Text = "О программе"
         Me.Button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -179,9 +187,11 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.ListView)
         Me.GroupBox1.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.Maroon
-        Me.GroupBox1.Location = New System.Drawing.Point(4, 154)
+        Me.GroupBox1.Location = New System.Drawing.Point(5, 190)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(752, 296)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Size = New System.Drawing.Size(1003, 364)
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Обнаруженные информационные базы 1С"
@@ -191,9 +201,10 @@ Partial Class Form1
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Maroon
-        Me.Label2.Location = New System.Drawing.Point(4, 49)
+        Me.Label2.Location = New System.Drawing.Point(5, 60)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(389, 17)
+        Me.Label2.Size = New System.Drawing.Size(464, 21)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Интервал между циклами чтения событий из ЖР (секунд)"
         '
@@ -202,9 +213,10 @@ Partial Class Form1
         Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Button1.Image = Global.EventLogLoaderManager.My.Resources.Resources.save_all
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(470, 456)
+        Me.Button1.Location = New System.Drawing.Point(627, 561)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(163, 47)
+        Me.Button1.Size = New System.Drawing.Size(217, 58)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Сохранить параметры"
         Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -215,9 +227,10 @@ Partial Class Form1
         Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Button3.Image = Global.EventLogLoaderManager.My.Resources.Resources.edit_delete_5986
         Me.Button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.Location = New System.Drawing.Point(325, 456)
+        Me.Button3.Location = New System.Drawing.Point(433, 561)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(139, 47)
+        Me.Button3.Size = New System.Drawing.Size(185, 58)
         Me.Button3.TabIndex = 0
         Me.Button3.Text = "Удалить службу"
         Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -228,9 +241,10 @@ Partial Class Form1
         Me.ButtonAddPath.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.ButtonAddPath.Image = Global.EventLogLoaderManager.My.Resources.Resources.edit_add_3860
         Me.ButtonAddPath.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.ButtonAddPath.Location = New System.Drawing.Point(4, 456)
+        Me.ButtonAddPath.Location = New System.Drawing.Point(5, 561)
+        Me.ButtonAddPath.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonAddPath.Name = "ButtonAddPath"
-        Me.ButtonAddPath.Size = New System.Drawing.Size(162, 47)
+        Me.ButtonAddPath.Size = New System.Drawing.Size(216, 58)
         Me.ButtonAddPath.TabIndex = 0
         Me.ButtonAddPath.Text = "Добавить путь вручную"
         Me.ButtonAddPath.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -241,9 +255,10 @@ Partial Class Form1
         Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Button2.Image = Global.EventLogLoaderManager.My.Resources.Resources.edit_add_3860
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(172, 456)
+        Me.Button2.Location = New System.Drawing.Point(229, 561)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(147, 47)
+        Me.Button2.Size = New System.Drawing.Size(196, 58)
         Me.Button2.TabIndex = 0
         Me.Button2.Text = "Установить службу"
         Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -253,18 +268,20 @@ Partial Class Form1
         '
         Me.RepeatTime.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.RepeatTime.Location = New System.Drawing.Point(449, 49)
+        Me.RepeatTime.Location = New System.Drawing.Point(599, 60)
+        Me.RepeatTime.Margin = New System.Windows.Forms.Padding(4)
         Me.RepeatTime.Name = "RepeatTime"
-        Me.RepeatTime.Size = New System.Drawing.Size(156, 20)
+        Me.RepeatTime.Size = New System.Drawing.Size(207, 22)
         Me.RepeatTime.TabIndex = 2
         '
         'Label4
         '
         Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(1, 513)
+        Me.Label4.Location = New System.Drawing.Point(1, 631)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(223, 13)
+        Me.Label4.Size = New System.Drawing.Size(292, 17)
         Me.Label4.TabIndex = 22
         Me.Label4.Text = "Описание и страница для обратной связи:"
         '
@@ -272,9 +289,10 @@ Partial Class Form1
         '
         Me.LinkLabel1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(228, 513)
+        Me.LinkLabel1.Location = New System.Drawing.Point(304, 631)
+        Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(166, 13)
+        Me.LinkLabel1.Size = New System.Drawing.Size(209, 17)
         Me.LinkLabel1.TabIndex = 21
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "http://infostart.ru/public/182820/"
@@ -283,9 +301,10 @@ Partial Class Form1
         '
         Me.LinkLabel3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.LinkLabel3.AutoSize = True
-        Me.LinkLabel3.Location = New System.Drawing.Point(228, 530)
+        Me.LinkLabel3.Location = New System.Drawing.Point(304, 652)
+        Me.LinkLabel3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel3.Name = "LinkLabel3"
-        Me.LinkLabel3.Size = New System.Drawing.Size(262, 13)
+        Me.LinkLabel3.Size = New System.Drawing.Size(334, 17)
         Me.LinkLabel3.TabIndex = 21
         Me.LinkLabel3.TabStop = True
         Me.LinkLabel3.Text = "https://github.com/alekseybochkov/EventLogLoader"
@@ -294,9 +313,10 @@ Partial Class Form1
         '
         Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(1, 530)
+        Me.Label5.Location = New System.Drawing.Point(1, 652)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(186, 13)
+        Me.Label5.Size = New System.Drawing.Size(243, 17)
         Me.Label5.TabIndex = 22
         Me.Label5.Text = "Исходные коды (по GPL лицензии):"
         '
@@ -304,9 +324,10 @@ Partial Class Form1
         '
         Me.UseSynonymsForFieldsNamesCheckBox.AutoSize = True
         Me.UseSynonymsForFieldsNamesCheckBox.ForeColor = System.Drawing.Color.Black
-        Me.UseSynonymsForFieldsNamesCheckBox.Location = New System.Drawing.Point(13, 50)
+        Me.UseSynonymsForFieldsNamesCheckBox.Location = New System.Drawing.Point(17, 62)
+        Me.UseSynonymsForFieldsNamesCheckBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UseSynonymsForFieldsNamesCheckBox.Name = "UseSynonymsForFieldsNamesCheckBox"
-        Me.UseSynonymsForFieldsNamesCheckBox.Size = New System.Drawing.Size(237, 21)
+        Me.UseSynonymsForFieldsNamesCheckBox.Size = New System.Drawing.Size(287, 25)
         Me.UseSynonymsForFieldsNamesCheckBox.TabIndex = 23
         Me.UseSynonymsForFieldsNamesCheckBox.Text = "Использовать свои имена полей"
         Me.UseSynonymsForFieldsNamesCheckBox.UseVisualStyleBackColor = True
@@ -314,9 +335,10 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(6, 23)
+        Me.Label6.Location = New System.Drawing.Point(8, 28)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(96, 22)
+        Me.Label6.Size = New System.Drawing.Size(128, 27)
         Me.Label6.TabIndex = 24
         Me.Label6.Text = "Имя индекса"
         '
@@ -332,9 +354,11 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.UseSynonymsForFieldsNamesCheckBox)
         Me.GroupBox2.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.Color.Maroon
-        Me.GroupBox2.Location = New System.Drawing.Point(6, 70)
+        Me.GroupBox2.Location = New System.Drawing.Point(8, 86)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(750, 78)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox2.Size = New System.Drawing.Size(1000, 96)
         Me.GroupBox2.TabIndex = 25
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Параметры для ElasticSearch"
@@ -342,9 +366,10 @@ Partial Class Form1
         'LabelIndexNameExample
         '
         Me.LabelIndexNameExample.AutoSize = True
-        Me.LabelIndexNameExample.Location = New System.Drawing.Point(283, 51)
+        Me.LabelIndexNameExample.Location = New System.Drawing.Point(377, 63)
+        Me.LabelIndexNameExample.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelIndexNameExample.Name = "LabelIndexNameExample"
-        Me.LabelIndexNameExample.Size = New System.Drawing.Size(166, 17)
+        Me.LabelIndexNameExample.Size = New System.Drawing.Size(203, 21)
         Me.LabelIndexNameExample.TabIndex = 28
         Me.LabelIndexNameExample.Text = "Пример имени индекса: "
         '
@@ -352,9 +377,10 @@ Partial Class Form1
         '
         Me.CheckBoxSplitIndexByPeriods.AutoSize = True
         Me.CheckBoxSplitIndexByPeriods.ForeColor = System.Drawing.Color.Black
-        Me.CheckBoxSplitIndexByPeriods.Location = New System.Drawing.Point(283, 23)
+        Me.CheckBoxSplitIndexByPeriods.Location = New System.Drawing.Point(377, 28)
+        Me.CheckBoxSplitIndexByPeriods.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBoxSplitIndexByPeriods.Name = "CheckBoxSplitIndexByPeriods"
-        Me.CheckBoxSplitIndexByPeriods.Size = New System.Drawing.Size(329, 21)
+        Me.CheckBoxSplitIndexByPeriods.Size = New System.Drawing.Size(393, 25)
         Me.CheckBoxSplitIndexByPeriods.TabIndex = 27
         Me.CheckBoxSplitIndexByPeriods.Text = "Разделять индекс по периодам с постфиксом:"
         Me.CheckBoxSplitIndexByPeriods.UseVisualStyleBackColor = True
@@ -363,16 +389,17 @@ Partial Class Form1
         '
         Me.ComboBoxESIndexPostfix.FormattingEnabled = True
         Me.ComboBoxESIndexPostfix.Items.AddRange(New Object() {"yyyy", "yyyyMM", "yyyyMMdd", "yyyyMMddHH"})
-        Me.ComboBoxESIndexPostfix.Location = New System.Drawing.Point(618, 22)
+        Me.ComboBoxESIndexPostfix.Location = New System.Drawing.Point(824, 27)
+        Me.ComboBoxESIndexPostfix.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBoxESIndexPostfix.Name = "ComboBoxESIndexPostfix"
-        Me.ComboBoxESIndexPostfix.Size = New System.Drawing.Size(105, 24)
+        Me.ComboBoxESIndexPostfix.Size = New System.Drawing.Size(139, 29)
         Me.ComboBoxESIndexPostfix.TabIndex = 26
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(768, 547)
+        Me.ClientSize = New System.Drawing.Size(1024, 673)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -391,7 +418,9 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button3)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form1"
+        Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.GroupBox1.ResumeLayout(False)
